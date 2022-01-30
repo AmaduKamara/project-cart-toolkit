@@ -4,9 +4,7 @@ import cartActions from "../../store/cart-slice";
 import Card from "../UI/Card";
 import classes from "./ProductItem.module.css";
 
-const ProductItem = (props) => {
-  const { id, title, price, description } = props;
-
+const ProductItem = ({ id, title, price, description }) => {
   const dispatch = useDispatch();
 
   const addToCartHandler = () => {
